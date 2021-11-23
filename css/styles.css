@@ -33,8 +33,22 @@ body {
   line-height: 1.2;
 }
 
+.logo {
+  color: #212121;
+}
+.second {
+  color: #2196f3;
+}
+.logodown {
+  color: #ffffff;
+}
+
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 .another {
   color: var(--accent-color);
@@ -50,8 +64,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-mail {
+.both:hover,
+.both:focus {
   color: var(--accent-color);
+}
+.contacts-mail {
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,7 +77,7 @@ ul {
 }
 .contacts-mail:hover,
 .contacts-mail:focus {
-  color: var(--primary-text-color);
+  color: var(--accent-color);
 }
 .contacts-phone {
   color: var(--secondary-color);
@@ -75,7 +93,9 @@ ul {
 
 .header {
   color: var(--header-background-color);
-  background-color: var(--secondary-background-color);
+}
+.hero {
+  background-color: #212121;
 }
 .features .title {
   color: var(--primary-text-color);
@@ -100,8 +120,18 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.button-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.button-list:hover {
+  color: var(--accent-color);
+}
 .background-main {
-  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -119,9 +149,6 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.unique-content {
-  background-color: var(--primary-background-color);
-}
 .title-main {
   color: var(--primary-text-color);
   font-weight: bold;
@@ -130,26 +157,16 @@ ul {
   letter-spacing: 0.06em;
 }
 .main-text {
-  background-color: var(--primary-background-color);
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-.list-section {
-  background-color: var(--primary-background-color);
-}
+
 .list-team {
   background-color: var(--third-background-color);
 }
 
-.title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14s;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
 .unique {
   font-size: 14px;
   line-height: 1.7;
@@ -179,11 +196,14 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+address:hover {
   color: var(--header-background-color);
 }
 .contacts {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.contacts:hover {
+  color: var(--primary-background-color);
 }
