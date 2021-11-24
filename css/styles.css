@@ -41,6 +41,11 @@ body {
 }
 .logodown {
   color: #ffffff;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -48,6 +53,12 @@ ul {
 }
 a {
   text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+button {
   cursor: pointer;
 }
 .another {
@@ -93,12 +104,25 @@ a {
 
 .header {
   color: var(--header-background-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero {
   background-color: #212121;
 }
 .features .title {
   color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .same {
   color: var(--primary-text-color);
@@ -109,9 +133,7 @@ a {
   letter-spacing: 0.03em;
 }
 .button {
-  background-color: var(--accent-color);
-  color: var(--header-background-color);
-  font-family: inherit;
+  font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -119,17 +141,26 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--header-background-color);
+  background-color: var(--accent-color);
 }
+.button:hover {
+  background-color: #188ce8;
+}
+
 .button-list {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--third-background-color);
   color: var(--primary-text-color);
 }
 .button-list:hover {
-  color: var(--accent-color);
+  color: var(--header-background-color);
+  background-color: var(--accent-color);
 }
 .background-main {
   color: var(--primary-text-color);
@@ -192,16 +223,22 @@ a {
 .footer {
   background-color: var(--primary-text-color);
 }
-.adress {
+.address {
+  font-style: normal;
+  font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: var(--header-background-color);
 }
 address:hover {
   color: var(--header-background-color);
 }
 .contacts {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .contacts:hover {
