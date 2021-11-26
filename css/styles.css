@@ -55,8 +55,15 @@ body {
   text-align: center;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* контейнер */
@@ -220,7 +227,7 @@ body {
 /* Блок Наши приимущества */
 .advantages {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages > .container > .list {
@@ -252,7 +259,7 @@ body {
 
 /* Блок Work  */
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .work .title {
@@ -297,20 +304,16 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-.card > .title {
-  padding-top: 30px;
+.card .title {
   margin: 0;
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.card > .text {
-  padding-bottom: 30px;
+.card .text {
   margin: 0;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -318,6 +321,10 @@ body {
 
 .card > img {
   display: block;
+}
+.container-text {
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 /* Футер */
@@ -332,22 +339,23 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.indent {
+  margin-top: 9px;
+}
 
-.address > .text {
+.address .text {
   margin: 0;
-  margin-top: 20px;
 }
 
 .address {
+  margin-top: 20px;
   color: var(--address-color);
   font-style: normal;
 }
 
 .address .link {
   color: var(--address-secondary-color);
-
   display: inline-block;
-  margin-top: 9px;
 }
 
 .address .link:hover,
